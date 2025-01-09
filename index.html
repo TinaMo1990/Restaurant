@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Cristina Moutardier">
+
+<title>MENU</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styleHeader.css">
+<link rel="stylesheet" href="css/styleFiltro.css">
+<link rel="stylesheet" href="img/600x400-1.png">
+
+<div class="container filtro">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+
+        <div id="carouselIntervalo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-caption">
+            <h1 class="display">MENÚ DE COMIDA RAPIDA</h1>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/banner-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/banner-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/banner-3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="navbar">
+        <a class="activado" href="#">Menú</a>
+        <a href="#">¿Quienes somos?</a>
+        <a href="#"><i class="bi bi-envelope"></i>Contacto</a>
+        
+      </div>
+    </header>
+  
+
+  <div id="myBtnContainer" class="filtro">
+    <button class="btn activeFilter" onclick="filterSelection('all')"> Mostrar todos</button>
+    <button class="btn" onclick="filterSelection('hamburguesa')"> Hamburguesas</button>
+    <button class="btn" onclick="filterSelection('ternera')"> Vacuno</button>
+    <button class="btn" onclick="filterSelection('pollo')"> Pollo</button>
+    <button class="btn" onclick="filterSelection('cerdo')"> Cerdo</button>
+    <button class="btn" onclick="filterSelection('ensalada')"> Ensalada</button>
+    <button class="btn" onclick="filterSelection('vegano')"> Vegano</button>
+    <button class="btn" onclick="filterSelection('postre')"> Postres</button>
+    <button class="btn" onclick="filterSelection('bebida')"> Bebidas</button>
+  </div>
+  </div>
+
+<main>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col filterDiv ensalada">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/ensalada-aguacate.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">8.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Ensalada</h5>
+              <p class="card-text">ENSALADA vegana para comer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv ensalada pollo">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/ensalada-p-manzana-queso.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">7.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Ensalada de Pollo</h5>
+              <p class="card-text">ENSALADA DE POLLO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv ensalada vegano">
+            <div class="card shadow-sm card-plato">
+                
+              <img src="img/ensalada-esparragos-frutos.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">10.90€</small>
+              <div class="card-body texto-plato">
+                <h5>Ensalada de Tofu</h5>
+                <p class="card-text">ENSALADA DE TOFU</p>
+              </div>
+            </div>
+          </div>
+        <div class="col filterDiv hamburguesa ternera">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/600x400-1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">11.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Ternera</h5>
+              <p class="card-text">Jugosa carne de Vacuno bien condimentada</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv hamburguesa pollo">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/hamburguesa-de-pollo.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">10.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Pollo</h5>
+              <p class="card-text">Pechuga de pollo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv hamburguesa cerdo">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/600x400-3.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">11.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Cerdo</h5>
+              <p class="card-text">HAMBURGUESA DE CERDO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv hamburguesa vegano">
+            <div class="card shadow-sm card-plato">
+                
+              <img src="img/600x400-T1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">10.90€</small>
+              <div class="card-body texto-plato">
+                <h5>Hamburguesa de Tofu</h5>
+                <p class="card-text">HAMBURGUESA DE TOFU</p>
+              </div>
+            </div>
+          </div>
+        <div class="col filterDiv postre">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/tarta-fresas.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">5.00€</small>
+            <div class="card-body texto-plato">
+              <h5>Tarta de Fresas</h5>
+              <p class="card-text">Tarta de Fresas</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv postre">
+            <div class="card shadow-sm card-plato">
+                
+              <img src="img/flan-de-dulce-de-leche.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">5.00€</small>
+              <div class="card-body texto-plato">
+                <h5>Dulce de Leche</h5>
+                <p class="card-text">Dulce de Leche</p>
+                
+              </div>
+            </div>
+          </div>
+        <div class="col filterDiv ternera">
+          <div class="card shadow-sm card-plato">
+            
+          <img src="img/600x400-4.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">11.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de ternera</h5>
+              <p class="card-text">Hamburguesa de ternera extra</p>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv pollo">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/hamburguesa-pollo-queso.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">9.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de Pollo</h5>
+              <p class="card-text">Hamburguesa de Pollo con mucho queso</p>
+       
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv cerdo">
+          <div class="card shadow-sm card-plato">
+            
+            <img src="img/600x400-1.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <small class="text-muted">10.90€</small>
+            <div class="card-body texto-plato">
+              <h5>Hamburguesa de cerdo XXL</h5>
+              <p class="card-text">Hamburguesa de cerdo XXL</p>
+            </div>
+          </div>
+        </div>
+        <div class="col filterDiv vegano">
+            <div class="card shadow-sm card-plato">
+                
+              <img src="img/600x400-T2.png" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">11.90€</small>
+              <div class="card-body texto-plato">
+                <h5>Hamburguesa de Tofu con rucula</h5>
+                <p class="card-text">Hamburguesa de Tofu con rucula</p>
+              </div>
+            </div>
+        </div>
+          <div class="col filterDiv bebida">
+            <div class="card shadow-sm card-plato">
+                
+              <img src="img/cocacola.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">2.50€</small>
+              <div class="card-body texto-plato">
+                <h5>Always ...</h5>
+                <p class="card-text">CocaCola</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col filterDiv bebida">
+            <div class="card shadow-sm card-plato">
+              <img src="img/cerveza.jpg" alt="" srcset="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <small class="text-muted">3.00€</small>
+  
+              <div class="card-body texto-plato">
+                <h5>Cerveza</h5>
+                <p class="card-text">Cerveza</p>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- Footer -->
+</div> <!-- container end -->
+<footer class="bg-dark text-center text-white">
+  
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Compañeros de clase:
+      </p>
+    </section>
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text">Tecnologías comunes utilizadas.</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="text-white">CSS</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="text-white">HTML</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="text-white">JS</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <div class="donde col">
+            <h3>Donde estamos</h3>
+            <div style="width: 100%"><iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://www.mapsdirections.info/marcar-radio-circulo-mapa/">Dibuja un circulo Google Maps</a></div>
+          </div>
+          <div class="social col">
+            <h3>Redes sociales</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https:/.com/canodelacuadra/carta-menu-restaurante" class="text-white bi bi-github" >canodelacuadra</a>
+            </li>
+            <li>
+              <a href="https:/.com/ JRPT82 /carta_menu_restaurante" class="text-white bi bi-github" >Ricardo</a>
+            </li>
+            <li>
+              <a href="https:/.com/adomuf/carta-menu-restaurante" class="text-white bi bi-github" >adomuf</a>
+            </li>
+            <li>
+              <a href="https:/.com/MaryGels/carta-menu-restaurante" class="text-white bi bi-github" >MaryGels</a>
+            </li>
+            <li>
+              <a href="https:/.com/JorgeALozanoTariche/carta-menu-restaurante" class="text-white bi bi-github">JorgeALozanoTariche</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https:/.com/tatvil71/carta-menu-restaurante" class="text-white bi bi-github">tatvil71</a>
+            </li>
+            <li>
+              <a href="https:/.com/jeroboan2002/carta-menu-restaurante" class="text-white bi bi-github">jeroboan2002</a>
+            </li>
+            <li>
+              <a href="https:/.com/ehcDesign/carta-menu-restaurante" class="text-white bi bi-github" >ehcDesign</a>
+            </li>
+            <li>
+              <a href="https:/.com/macebron/carta-menu-restaurante" class="text-white bi bi-github">macebron</a>
+            </li>
+            <li>
+              <a href="https:/.com/rutribada/carta-menu-restaurante" class="text-white bi bi-github" >rutribada</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https:/.com/JRPT82/carta-menu-restaurante">JRPT82</a>
+    <p><i class="fab fa-facebook-f"></i>Facebook</p>
+    
+
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/scriptHeader.js"></script>
+<script src="js/scriptFiltro.js"></script>
+</body>
+</html>
